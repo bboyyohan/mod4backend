@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_01_202330) do
+ActiveRecord::Schema.define(version: 2020_07_01_214503) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 2020_07_01_202330) do
 
   create_table "guns", force: :cascade do |t|
     t.string "name"
-    t.integer "bullet_id"
-    t.integer "barrel_length"
+    t.integer "bullet_type_id"
+    t.float "barrel_length"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
