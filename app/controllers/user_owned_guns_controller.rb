@@ -1,0 +1,2 @@
+class UserOwnedGunsController < ApplicationController
+end
