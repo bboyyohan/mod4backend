@@ -12,8 +12,8 @@ Gun.destroy_all
 UserOwnedGun.destroy_all
 User.destroy_all
 
-u1 = User.create(username: "alex", password: "password")
-u2 = User.create(username: "yo", password: "pass")
+u1 = User.create(username: "alex", password_digest: "password")
+u2 = User.create(username: "yo", password_digest: "pass")
 
 b1 = BulletType.create(calibre: ".223", muzzle_velocity: 2840, weight: 55)
 b2 = BulletType.create(calibre: "7.62x39", muzzle_velocity: 2350, weight: 123)
@@ -26,3 +26,7 @@ g4 = Gun.create(name: "Remington 700 SPS", bullet_type_id: b1.id, barrel_length:
 
 uo1 = UserOwnedGun.create(user_id: u1.id, gun_id: g1.id)
 uo2 = UserOwnedGun.create(user_id: u2.id, gun_id: g2.id)
+uo3 = UserOwnedGun.create(user_id: u2.id, gun_id: g3.id)
+uo4 = UserOwnedGun.create(user_id: u2.id, gun_id: g4.id)
+uo5 = UserOwnedGun.create(user_id: u2.id, gun_id: g1.id)
+uo5 = UserOwnedGun.create(user_id: u1.id, gun_id: g3.id)
