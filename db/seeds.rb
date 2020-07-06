@@ -20,7 +20,8 @@ b2 = BulletType.create(calibre: "7.62x39", muzzle_velocity: 2350, weight: 123)
 
 g1 = Gun.create(name: "AK-47", bullet_type_id: b2.id, barrel_length: 16.3)
 g2 = Gun.create(name: "AR-15", bullet_type_id: b1.id, barrel_length: 14.0)
-
+g3 = Gun.create(name: "CZ-USA 527 American", bullet_type_id: b2.id, barrel_length: 21.88)
+g4 = Gun.create(name: "Remington 700 SPS", bullet_type_id: b1.id, barrel_length: 24.0)
 # comeback later to switch barrel_length to float + change in the models
 
 uo1 = UserOwnedGun.create(user_id: u1.id, gun_id: g1.id)
