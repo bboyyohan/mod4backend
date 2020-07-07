@@ -5,7 +5,7 @@ class CreateBulletTypes < ActiveRecord::Migration[6.0]
       t.integer :muzzle_velocity
       t.integer :weight
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end

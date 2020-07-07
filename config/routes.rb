@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users, only: :index
       post '/login', to: 'auth#create'
+      # get 'users/:id/user_owned_guns', to: 'user_owned_guns#getUserGuns'
       get '/profile', to: 'users#profile'
     end
   end

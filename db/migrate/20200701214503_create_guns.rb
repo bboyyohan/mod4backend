@@ -6,7 +6,7 @@ class CreateGuns < ActiveRecord::Migration[6.0]
       t.float :barrel_length
       t.string :image
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end

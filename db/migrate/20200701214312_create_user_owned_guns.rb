@@ -4,7 +4,7 @@ class CreateUserOwnedGuns < ActiveRecord::Migration[6.0]
       t.integer :user_id
       t.integer :gun_id
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end

@@ -19,8 +19,6 @@ ActiveRecord::Schema.define(version: 2020_07_01_214503) do
     t.string "calibre"
     t.integer "muzzle_velocity"
     t.integer "weight"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "guns", force: :cascade do |t|
@@ -28,22 +26,16 @@ ActiveRecord::Schema.define(version: 2020_07_01_214503) do
     t.integer "bullet_type_id"
     t.float "barrel_length"
     t.string "image"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "user_owned_guns", force: :cascade do |t|
     t.integer "user_id"
     t.integer "gun_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
