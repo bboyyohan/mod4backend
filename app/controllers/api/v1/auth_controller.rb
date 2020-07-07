@@ -5,7 +5,7 @@ class Api::V1::AuthController < ApplicationController
         user = User.find_by(username: params['username'], password_digest: params['password'])
         
         if user 
-            render json: {message: "log in", user_data: user, error: false}
+            render json: {message: "log in", user_guns: user.guns, user_data: user, error: false}
         else
             render json: {message: 'You need to be better', error: true}
         end
