@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_07_01_214503) do
     t.string "name"
     t.integer "bullet_type_id"
     t.float "barrel_length"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

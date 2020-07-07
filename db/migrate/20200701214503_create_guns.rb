@@ -4,6 +4,7 @@ class CreateGuns < ActiveRecord::Migration[6.0]
       t.string :name
       t.integer :bullet_type_id
       t.float :barrel_length
+      t.string :image
 
       t.timestamps
     end
