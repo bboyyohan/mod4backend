@@ -3,6 +3,12 @@ class UserOwnedGunsController < ApplicationController
     def index
         render json: UserOwnedGun.all
     end 
+
+    def create 
+        
+        user = UserOwnedGun.create(user_id: params[:user_id], gun_id: params[:gun_id])
+        render json: user
+    end 
     
     def show
         # byebug
