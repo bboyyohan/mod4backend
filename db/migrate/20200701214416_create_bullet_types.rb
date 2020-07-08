@@ -1,7 +1,7 @@
 class CreateBulletTypes < ActiveRecord::Migration[6.0]
   def change
     create_table :bullet_types do |t|
-      t.string :calibre
+      t.float :calibre
       t.integer :muzzle_velocity
       t.integer :weight
 

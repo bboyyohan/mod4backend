@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_07_01_214503) do
   enable_extension "plpgsql"
 
   create_table "bullet_types", force: :cascade do |t|
-    t.string "calibre"
+    t.float "calibre"
     t.integer "muzzle_velocity"
     t.integer "weight"
   end

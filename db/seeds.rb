@@ -15,8 +15,8 @@ User.destroy_all
 u1 = User.create(username: "alex", password_digest: "password")
 u2 = User.create(username: "yo", password_digest: "pass")
 
-b1 = BulletType.create(calibre: ".223", muzzle_velocity: 2840, weight: 55)
-b2 = BulletType.create(calibre: "7.62x39", muzzle_velocity: 2350, weight: 123)
+b1 = BulletType.create(calibre: 5.56, muzzle_velocity: 2840, weight: 55)
+b2 = BulletType.create(calibre: 7.62, muzzle_velocity: 2350, weight: 123)
 
 g1 = Gun.create(name: "AK-47", bullet_type_id: b2.id, barrel_length: 16.3, image: 'https://cdn.britannica.com/70/123170-050-D7AAF458/AK-47.jpg')
 g2 = Gun.create(name: "AR-15", bullet_type_id: b1.id, barrel_length: 14.0, image: 'https://vignette.wikia.nocookie.net/amagicalplace/images/c/cf/AR-15.jpg/revision/latest?cb=20190311092437')
